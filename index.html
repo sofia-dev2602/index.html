@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site com Bootstrap</title>
+  <title>Arte & Dança</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -12,37 +12,103 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       
-      <a class="navbar-brand" href="#">MeuSite</a>
+      <a class="navbar-brand fw-bold text-warning" href="#">Arte & Dança 💃</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarConteudo" aria-controls="navbarConteudo" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarConteudo">
-        
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#sobre">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serviços</a>
+            <a class="nav-link" href="#estilos">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#contato">Contato</a>
           </li>
         </ul>
 
-        <a class="btn btn-primary" href="#">Entrar</a>
+        <a class="btn btn-outline-light ms-auto" href="#">Entrar</a>
 
       </div>
     </div>
   </nav>
+
+  <header class="bg-primary text-white text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80') center/cover;">
+    <div class="container py-5">
+      <h1 class="display-3 fw-bold">Sinta o Ritmo do Mundo</h1>
+      <p class="fs-4">Descubra a arte da dança, expresse suas emoções e transforme seu corpo e mente.</p>
+      <a href="#estilos" class="btn btn-warning btn-lg fw-bold mt-3">Conheça Nossas Aulas</a>
+    </div>
+  </header>
+
+  <section id="sobre" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">Sobre Nossa Escola</h2>
+        <p class="lead text-muted">A dança é a linguagem escondida da alma. Nossa missão é ensinar dança para todas as idades, desde iniciantes até níveis avançados.</p>
+        <p>Oferecemos um ambiente acolhedor, professores qualificados e uma variedade de modalidades para você encontrar o estilo que mais combina com você.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Pessoas dançando">
+      </div>
+    </div>
+  </section>
+
+  <section id="estilos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Nossos Estilos de Dança</h2>
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Ballet Clássico">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Ballet Clássico</h5>
+              <p class="card-text text-muted">Desenvolva postura, flexibilidade e elegância com as técnicas fundamentais do ballet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Dança Urbana">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Danças Urbanas (Hip Hop)</h5>
+              <p class="card-text text-muted">Muita energia, ritmo e expressão corporal com os estilos de dança de rua mais modernos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Dança de Salão">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Dança de Salão</h5>
+              <p class="card-text text-muted">Aprenda a dançar a dois com ritmos apaixonantes como Samba, Forró, Bolero e Zouk.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato" class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">💃 Escola Arte & Dança - Trabalho de Desenvolvimento Web</p>
+      <small class="text-secondary">Desenvolvido com Bootstrap 5</small>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
